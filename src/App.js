@@ -9,8 +9,8 @@ import Home from "./components/Home";
 import Login from "./components/Login";
 import PrivateRoute from "./components/PrivateRoute";
 import Error from "./components/Error";
+import Loginn from "./components/Auth/Loginn";
 import { createBrowserRouter, Outlet } from "react-router-dom";
-
 export const App = () => {
   return (
     <React.Fragment>
@@ -68,5 +68,9 @@ export const appRouter = createBrowserRouter([
   {
     path: "login",
     element: <Login />,
+  },
+  {
+    path: "loginlogin",
+    element: <Loginn />,
   },
 ]);
