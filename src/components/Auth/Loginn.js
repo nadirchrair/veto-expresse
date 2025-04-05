@@ -11,14 +11,11 @@ import {
   IconButton 
 } from '@mui/material';
 import { Facebook, Google, Twitter } from '@mui/icons-material';
+import dogImages from '../../assets/dogpictures.jpeg';
 
 const Loginn = () => {
   
   // Sample dog images (replace with your actual image paths)
-  const dogImages = [
-
-    'https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?w=200'
-  ];
 
   return (
     <Box 
@@ -205,27 +202,23 @@ marginTop:'150px',
   Registration
 </Button>
         
-        <Grid container spacing={2} justifyContent="center" sx={{ mt: 4 }}>
-          {dogImages.map((img, index) => (
-            <Grid item key={index}>
+        <Grid container  justifyContent="right" sx={{ mt: 4,mr:4 }}>
+          
+            
               <Box
                 component="img"
-                src={img}
-                alt={`Dog ${index + 1}`}
+                src={dogImages}
+                
                 sx={{
                   width: 150,
                   height: 150,
                   objectFit: 'cover',
-                  borderRadius: 2,
-                  boxShadow: 3
-                }}
+                                 }}
               />
-            </Grid>
-          ))}
+            
+        
         </Grid>
-        
-        
-      </Box>
+          </Box>
     </Box>
   );
 };
