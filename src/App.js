@@ -11,6 +11,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import Error from "./components/Error";
 import Loginn from "./components/Auth/Loginn";
 import { createBrowserRouter, Outlet } from "react-router-dom";
+import Register from "./components/Auth/Register";
 export const App = () => {
   return (
     <React.Fragment>
@@ -72,5 +73,9 @@ export const appRouter = createBrowserRouter([
   {
     path: "loginlogin",
     element: <Loginn />,
+  },
+  {
+    path: "Registre",
+    element: <Register />,
   },
 ]);

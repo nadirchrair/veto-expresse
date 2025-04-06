@@ -203,20 +203,15 @@ marginTop:'150px',
 </Button>
         
         <Grid container  justifyContent="right" sx={{ mt: 4,mr:4 }}>
-          
-            
               <Box
                 component="img"
                 src={dogImages}
-                
                 sx={{
                   width: 150,
                   height: 150,
                   objectFit: 'cover',
                                  }}
               />
-            
-        
         </Grid>
           </Box>
     </Box>
