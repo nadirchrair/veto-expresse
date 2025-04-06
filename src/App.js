@@ -12,6 +12,7 @@ import Error from "./components/Error";
 import Loginn from "./components/Auth/Loginn";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import Register from "./components/Auth/Register";
+import Homeapp from "./components/Home/Homeapp";
 export const App = () => {
   return (
     <React.Fragment>
@@ -78,4 +79,8 @@ export const appRouter = createBrowserRouter([
     path: "Registre",
     element: <Register />,
   },
+  {
+    path: "home",
+    element: <Homeapp />,
+  }
 ]);
