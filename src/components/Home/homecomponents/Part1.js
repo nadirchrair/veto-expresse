@@ -12,7 +12,7 @@ import {
   Avatar,
 } from '@mui/material';
 import { ShoppingCart, Search } from '@mui/icons-material';
-
+import image from '../../../assets/homecat.png';
 export default function Part1() {
   return (
     <Box sx={{ flexGrow: 1,  maxHeight: '1042px', height:'1042px' }}>
@@ -27,7 +27,7 @@ export default function Part1() {
           </Stack>
 
           {/* Navigation Links */}
-          <Stack direction="row" spacing={4} alignItems="center">
+          <Stack direction="row" spacing={4} alignItems="center" sx={{mr:6}}>
             {['Home', 'About', 'Services', 'Profile'].map((item) => (
               <Typography
                 key={item}
@@ -71,20 +71,28 @@ export default function Part1() {
             spacing={5}
           >
             {/* Text Content */}
-            <Box flex={1}>
-              <Typography variant="h3" fontWeight={300}>
+            <Box flex={1} >
+              <Box width="698px">
+                <Box sx={{ borderLeft: '10px solid #EDEDED', pl: 3 }}>
+              <Typography variant="h3" fontWeight={200} fontFamily="inter" fontSize="84px" lineHeight="96px" >
                 Comprehensive{' '}
-                <Typography variant="h3" component="span" fontWeight="bold">
+                </Typography>
+                <Typography variant="h3" component="span" fontWeight={600} fontFamily="inter" fontSize="84px" lineHeight="96px" >
                   Pet Solutions
                 </Typography>{' '}
+                <Typography variant="h3" fontWeight={200} fontFamily="inter" fontSize="84px" lineHeight="96px" >
                 for Pet Parents.
-              </Typography>
-              <Typography variant="h6" mt={2}>
+
+                </Typography>
+              
+              <Typography variant="h6" mt={2} fontWeight={300} fontFamily="inter" fontSize="32px" lineHeight="64px" color="#fff">
                 One-stop hub for complete solutions
               </Typography>
-              <Typography variant="body2" mt={4} sx={{ display: 'flex', alignItems: 'center' }}>
+              </Box>
+              <Typography variant="body2" mt={8} sx={{ display: 'flex', alignItems: 'center' }}  fontWeight={500} fontFamily="inter" fontSize="21px" lineHeight="100%" color="#fff">
                 🛟 Emergency Support
               </Typography>
+              </Box>
             </Box>
 
             {/* Image */}
@@ -95,10 +103,10 @@ export default function Part1() {
                 justifyContent: 'center',
               }}
             >
-              <Avatar
+              <img
                 alt="Pet Cat"
-                src="/cat-image.jpg"
-                sx={{ width: 300, height: 300, borderRadius: '50%' }}
+                src={image}
+                sx={{ width: '700px', height: '800px'}}
               />
             </Box>
           </Stack>
