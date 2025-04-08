@@ -68,10 +68,10 @@ export default function Part1() {
             direction={{ xs: 'column', md: 'row' }}
             justifyContent="space-between"
             alignItems="center"
-            spacing={5}
+            spacing={3}
           >
             {/* Text Content */}
-            <Box flex={1} >
+            <Box flex={1}  >
               <Box width="698px">
                 <Box sx={{ borderLeft: '10px solid #EDEDED', pl: 3 }}>
               <Typography variant="h3" fontWeight={200} fontFamily="inter" fontSize="84px" lineHeight="96px" >
