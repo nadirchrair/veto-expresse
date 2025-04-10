@@ -22,16 +22,14 @@ const Part2 = () => {
             label={category}
             sx={{
               color: index === 0 ? 'white' : 'white',
-              bgcolor: index === 0 ? '#0d47a1' : 'transparent',
+              bgcolor: index === 0 ? '#003092EE' : '#fff',
               borderRadius: 10,
               px: 3,
               py: 1,
               mr: 2,
-              border: '1px solid white',
+              border:  index !=0 ? '1px solid white' : '',
               fontWeight: 'bold',
-              '&:hover': {
-                bgcolor: '#1565c0',
-              },
+             
             }}
           />
         ))}
@@ -69,12 +67,12 @@ const Part2 = () => {
               <Typography variant="subtitle1" fontWeight="bold" textTransform="capitalize">
                 {pro.name}
               </Typography>
-              <Chip
-                label={pro.status}
+              <button
+                label={pro.tatus}
                 color="success"
                 size="small"
                 sx={{ mt: 1, mb: 1 }}
-              />
+              >Avaible</button>
               <Typography variant="body2" color="text.secondary">
                 {pro.clinic}
               </Typography>
