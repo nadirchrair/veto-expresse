@@ -172,7 +172,6 @@ Confirm Password
                 },
               }}
             />
-
 <Button
   variant="contained"
   sx={{
