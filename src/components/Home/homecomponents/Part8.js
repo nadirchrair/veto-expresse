@@ -1,14 +1,15 @@
 import React from 'react';
 import { Box, Grid, Typography, Button } from '@mui/material';
-
+import mobile from "../../../assets/mobile.png"
 const Part8 = () => {
   return (
-    <Box sx={{ py: 6, ml:'40px', backgroundColor: '#fff', textAlign: 'center',display:'flex' }}>
-        <Box sx={{}}>
-      <Typography variant="h5" fontWeight="bold" gutterBottom>
+    <Box sx={{ py: 6, ml:'400px', backgroundColor: '#fff', textAlign: 'center',display:'flex' , mt:'54px'}}>
+        <Box sx={{mr:14, mt:14}}>
+      
+      <Typography variant="h5"  sx={{fontFamily:'inter',fontWeight:'400',fontSize:'65.2px',color:'#484747'}}>
         Download Our
       </Typography>
-      <Typography variant="h4" fontWeight="bold" color="primary" gutterBottom>
+      <Typography variant="h4" fontWeight="bold" color="#4C4C4B" sx={{fontFamily:'inter',fontWeight:'400',fontSize:'65.2px',color:'#484747'}}>
         Mobile App
       </Typography>
 
@@ -33,11 +34,11 @@ const Part8 = () => {
         </Grid>
       </Grid>
       </Box>
-      <Box mt={6} display="flex" justifyContent="center">
+      <Box mt={6} ml={14} display="flex" justifyContent="center">
         <img
-          src="https://i.ibb.co/7g3Pz6S/phone-mockup.png" // You can replace this with your actual phone image URL
+          src={mobile} // You can replace this with your actual phone image URL
           alt="Mobile App Preview"
-          style={{ maxWidth: '300px', borderRadius: '20px', boxShadow: '0 4px 20px rgba(0,0,0,0.2)' }}
+          style={{ maxWidth: '650px' }}
         />
       </Box>
     </Box>
