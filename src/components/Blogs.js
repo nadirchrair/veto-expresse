@@ -7,7 +7,7 @@ import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import Cards from "./Cards";
 import { jsonPlaceholderData } from "../constants/Constants";
-import { filterData } from "./utils/Helper";
+import { filterData } from "../utils/Helper";
 import { useTheme } from "@mui/material/styles";
 
 export default function Blogs() {
