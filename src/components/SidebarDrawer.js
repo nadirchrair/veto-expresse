@@ -34,23 +34,13 @@ export default function SidebarDrawer() {
       >
         <Box sx={{ overflow: "auto", mt: 8 }}>
           <List>
-            <Link to="/about">
-              <ListItem key="About" disablePadding>
+            <Link to="/admin/utilisateur">
+              <ListItem key="utilisateur" disablePadding>
                 <ListItemButton>
                   <ListItemIcon sx={{ color: "var(--main-bg-color)" }}>
                     <BsFillInfoSquareFill />
                   </ListItemIcon>
-                  <ListItemText primary="About" sx={{ ml: -2 }} />
-                </ListItemButton>
-              </ListItem>
-            </Link>
-            <Link to="/blogs">
-              <ListItem key="Blogs" disablePadding>
-                <ListItemButton>
-                  <ListItemIcon sx={{ color: "var(--main-bg-color)" }}>
-                    <SiBlogger />
-                  </ListItemIcon>
-                  <ListItemText primary="Blogs" sx={{ ml: -2 }} />
+                  <ListItemText primary="utilisateur" sx={{ ml: -2 }} />
                 </ListItemButton>
               </ListItem>
             </Link>

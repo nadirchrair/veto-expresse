@@ -1,7 +1,7 @@
 import React from "react";
 import SidebarDrawer from "./components/SidebarDrawer";
 import Navbar from "./components/Navbar";
-import About from "./components/About";
+import Utlisateur from "./components/Utlisateur";
 import User from "./components/User";
 import Blogs from "./components/Blogs";
 import BlogsId from "./components/BlogsId";
@@ -25,12 +25,12 @@ export const App = () => {
 
 export const appRouter = createBrowserRouter([
   {
-    path: "/",
+    path: "admin",
     element: <App />,
     errorElement: <Error />,
     children: [
       {
-        path: "/",
+        path: "dashboard",
         element: (
           <PrivateRoute>
             <Home />
@@ -38,8 +38,8 @@ export const appRouter = createBrowserRouter([
         ),
       },
       {
-        path: "about",
-        element: <About />,
+        path: "utilisateur",
+        element: <Utlisateur />,
       },
       {
         path: "user",
@@ -80,7 +80,7 @@ export const appRouter = createBrowserRouter([
     element: <Register />,
   },
   {
-    path: "home",
+    path: "",
     element: <Homeapp />,
   }
 ]);
